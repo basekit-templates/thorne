@@ -1,4 +1,3 @@
-thorne
-======
+Thorne
 
-Thorne Template
+=====
