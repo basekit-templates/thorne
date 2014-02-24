@@ -332,11 +332,6 @@ footer .widget.profile .twitter span {
 
 .widget.extendednavigation ul li.selected {
   background-color: @color-swatch3;
-
-}
-
-.widget.extendednavigation ul li.selected:hover { 
-
 }
 
 /* FOLDER */
@@ -350,8 +345,7 @@ footer .widget.profile .twitter span {
 }
 
 .widget.extendednavigation ul li.folder .text:hover {
-  color: @color-swatch1;
-  background-color: @color-swatch3;
+  color: @font-swatch6-color-hover;
 }
 
 /* DROPDOWN MENU */
@@ -381,20 +375,20 @@ footer .widget.profile .twitter span {
   box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
-.widget.extendednavigation li:hover > ul li:first-child {
+.widget.extendednavigation li:hover > ul > li:hover {
+  background-color: @color-swatch3;
 }
 
-.widget.extendednavigation li:hover > ul li:hover {
-
-}
 
 .widget.extendednavigation li:hover > ul > li > a {
   display: block;
   background-image: none;
-  color: @color-swatch7;
   padding: 0;
 }
 
+.widget .extendednavigation ul li:hover ul {
+  background-color: @color-swatch7;
+}
 
 .widget.extendednavigation ul li:hover > ul li .text {
   padding: 0 0 0 16px;
@@ -403,9 +397,6 @@ footer .widget.profile .twitter span {
   background-repeat: no-repeat;
 }
 
-.widget.extendednavigation li:hover > ul > li > a {
-
-}
 
 .widget.extendednavigation li:hover > ul li .text:hover {
   color: @color-swatch1;
@@ -1485,7 +1476,7 @@ width: 100%;
     top: -50px;
   }
 
-    .widget .extendednavigation a.pull:after {
+  .widget .extendednavigation a.pull:after {
     content:"";
     background: image('/images/nav-icon.png') no-repeat;
     width: 38px;
@@ -1524,10 +1515,6 @@ width: 100%;
 
   .widget.extendednavigation ul li > ul {
     display: none!important;
-  }
-
-   .widget.extendednavigation ul li.folder:hover {
-    background-color: @color-swatch3;
   }
 
   .widget.extendednavigation ul li:hover > ul {
