@@ -2,7 +2,7 @@
 
 {% block content %}
 
- <header>
+<header class="bk-header">
     <div class="wrapper clearfix">
        {{widget('companyheader', 'companyheader', {"defaultlogo": asset('images/logo.png')})|raw}}
        {{widget('extendednavigation', 'navigationheader', {})|raw}}
@@ -16,7 +16,7 @@
     {{zone('main')|raw}}
 </div>
 
-<footer>
+<footer class="bk-footer">
     <div class="wrapper clearfix">
         <div class="responsivecolumns columns-two-50-50">
             <div class="column columns-two-left">
