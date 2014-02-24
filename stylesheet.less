@@ -1259,6 +1259,201 @@ float: left;
 width: 100%;
 }
 
+/* ===============================
+   MENU SECTIONS NAVIGATION
+   =============================== */
+
+
+.widget {
+    &.menusections {
+        text-align: center;
+        padding: 0;
+        min-height: 30px;
+        @media only screen and (max-width: 850px) {
+            width:100%;
+            margin: 0 auto;
+            margin-top: 1.5em;
+        }
+        @media only screen and (max-width: 550px) {
+            padding:0;
+            margin-top:0;
+            padding: 0 0 0;
+        }
+        ul {
+            display: table;
+            width: 100%;
+            margin: 0 auto;
+            list-style: none;
+            padding: 0;
+            li {
+                display: inline-block;
+                padding: 1em 0.8em;
+                margin: 0;
+                @media only screen and (max-width: 550px) {
+                    width: 100%;
+                    border-bottom: 1px solid fade(@color-swatch4,20%);                }
+            }
+        }
+    }
+}
+
+/* ===============================
+   MENU
+   =============================== */
+
+.widget {
+    &.menu {
+        margin-top: 0.3em;
+        float: left;
+        width: 100%;
+        .main {
+            padding: 0;
+            border-top: 0;
+            display: none;
+            &.selected {
+                display: block;
+                float: left;
+                @media only screen and (max-width: 850px) {
+                    width: 100%;
+                    margin: 0;
+                    padding: 10px 0;
+                }
+            }
+
+            /* SECTION AND SUB-SECTION HEADERS */
+
+            .menu-header, .menu-subsection-header {
+                margin: 0;
+                padding: 4em 0 2em;
+                @media @tablet {
+                    padding: 2em 0 0.5em;
+                }
+                text-align: center;
+                h1 { /* menu-name */
+                    padding: 0;
+                }
+                h2 { /* MENU-SUBSECTION-HEADER */
+                    padding: 0;
+                    color: @font-swatch2-color;
+                }
+                p { /* description */
+                    padding: 5px 0 0; 
+                }
+            } /* end MENU-HEADER AND SUB-SECTION HEADER */
+
+
+            /* ITEMS */
+
+               .menu-items {
+                    li { /* menu-item */
+                        position: relative;
+                        display: block;
+                        text-align: center;
+                        padding-bottom: 2em;
+                        margin-bottom: 0;
+                        width: 100%;
+                        &.menu-item-promoted { /* menu-item-promoted */
+                                display: inline-block;
+                                .inner-item {
+                                    h3 {
+                                         &:after, &:before {
+                                            content: "\2605";
+                                            font-size: 12px;
+                                            display: inline-block;
+                                            margin: 0 10px;
+                                            position: relative;
+                                            top: -2px;
+                                        }
+                                    }
+                                }
+                        }/* end menu-item-promoted */
+
+                        .inner-item {
+                            display: inline-block;
+                            width: 100%;
+                            .menu-item-image-wrap {
+                                background-size:cover;
+                                background-repeat: no-repeat;
+                                height: 200px;
+                                background-position: center;
+                                -webkit-border-radius: 5px;
+                                -moz-border-radius: 5px;
+                                border-radius: 5px;
+                                img {
+                                    display: none;
+                                }
+                            }
+                            .menu-section-item-dietary-props {
+                                float: left;
+                                width: 100%;
+                                margin-top: 0px;
+                                padding: 0 0 0 1px;
+                               .dietary-icon {
+                                    background-color: fade(@color-swatch4,30%);
+                                    width: auto;
+                                    border: none;
+                                    font-family:@font-swatch5-font-family;
+                                    font-size:@font-swatch5-font-size;
+                                    display: inline-block;
+                                    z-index: 9999999;
+                                    color: @color-swatch1;
+                                    float: none;
+                                    margin-right: 0px;
+                                    margin-bottom: 5px;
+                                    padding: 0 7px;
+                                }
+                                .not-spicy-icon {
+                                    display: none;
+                                }
+                            } /* end menu-section-item-dietary-props */   
+
+
+                            .menu-item-description, .menu-section-item-description {
+                                margin-bottom: 0.5em;
+                            }
+
+                        } /* end inner-item */
+
+                    } /* end li menu-item */
+
+                } /* end ol */  
+
+                .menu-subsection {
+                  padding: 0;
+                }
+
+                .menu-subsection .menu-subsection-promoted { /* PROMOTED SUB-SECTION */ 
+                    border: 1px dotted fade(@color-swatch4,20%);
+                    padding: 0 2em 2em;
+                    margin: 2em 0 1em;
+                    position: relative;
+                    @media @mobile {
+                        padding: 0 2em 0;
+                    }
+                    .menu-subsection-header {
+                        margin: 20px 0;
+                        padding: 2em 0 0.2em;
+                        @media @mobile {
+                            padding: 0;
+                        }
+                    }
+                } /* end PROMOTED SUB-SECTION */
+
+                .menu-info {
+                    display: inline-block;
+                    width: 100%;
+                    text-align: center;
+                    margin: 0;
+                    p { /* menu-note */
+                      float: left;
+                      width: 100%;
+                      padding: 2em 0;
+                      color: @color-swatch3;
+                    }
+                } /* end menu-info */
+        } /* end main */
+    } /* end .widget.menu */
+} /* end .widget */
 
 
 /* ===============================
