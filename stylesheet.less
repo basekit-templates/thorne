@@ -296,6 +296,12 @@ footer .widget.profile .twitter span {
   float: left;
   display: block;
   text-align: left!important;
+  &.selected {
+    background-color: @color-swatch3;
+    a {
+
+    }
+  }
 }
 
 .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
@@ -441,8 +447,8 @@ footer .widget.profile .twitter span {
 /* FEATURE STRAPLINE */
 
 .widget.feature h3 {
-  font-family:@font-swatch9-font-family;
-  font-size:@font-swatch9-font-size;
+  font-family: @font-swatch9-font-family;
+  font-size: @font-swatch9-font-size;
   font-weight: @font-swatch9-font-weight;
   line-height:@font-swatch9-line-height;
   color: @font-swatch9-color;
@@ -1559,14 +1565,18 @@ width: 100%;
 
   .widget.feature {
     padding: 0;
+    h3 {
+      font-size: bkscale(@font-swatch9-font-size, 0.75);
+      line-height: bkacale(@font-swatch9-line-height, 0.85);
+    }
   }
 
    .widget.feature .feature-bgimg {
     height: 320px;
    }
 
-  .widget.feature .content {
-    height: 320px;
+ .widget.feature .feature-bgimg .content {
+    height: auto;
   }
 
 
@@ -1631,8 +1641,8 @@ width: 100%;
     height: 220px; /* should be in media query*/
    }
 
-  .widget.feature .content {
-    height: 220px;
+  .widget.feature .feature-bgimg .content {
+    height: auto;
   }
 
   .widget.feature .content .spare {
