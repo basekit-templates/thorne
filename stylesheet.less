@@ -1063,6 +1063,7 @@ hr.line.align-right {
                 background-color: @color-swatch3;
             }
             @media only screen and (max-width: 650px){
+                left: 0;
                 margin-bottom: 10px;
                 width: 25%;
             }
@@ -1348,6 +1349,9 @@ button.blog-search-submit-button, .widget.signupform button, .widget.profile but
             vertical-align: top;
             padding: inherit;
             @media @mobile {
+                border-radius: 4px;
+                -moz-border-radius: 4px;
+                -webkit-border-radius: 4px;
                 margin-top: 10px;
                 width: 100%;
             }
@@ -1419,6 +1423,10 @@ button.blog-search-submit-button, .widget.signupform button, .widget.profile but
   }
 
   /* NAV */
+
+  .widget.extendednavigation .bk-overlay {
+    top: 15px!important;
+  }
 
   .widget.extendednavigation {
     width: 100%;
