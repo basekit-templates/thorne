@@ -1,7 +1,7 @@
 {
     "name":"Thorne",
     "thumbnail":"thorne.png",
-    "screenshot":"thorne.png",
+    "screenshot":"thorne-screenshot.jpg",
     "templateType":"standard",
     "pageTypes": ["home"],
     "tags": {
