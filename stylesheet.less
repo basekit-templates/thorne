@@ -1403,7 +1403,8 @@ button.blog-search-submit-button, .widget.signupform button, .widget.profile but
 }
 
 .widget {
-    &.contactform {
+    &.contactform,
+    &.advancedcontactform {
         label {
             font-family: @font-swatch3-font-family;
             font-size: bkscale(@font-swatch3-font-size, 0.85);
@@ -1419,10 +1420,24 @@ button.blog-search-submit-button, .widget.signupform button, .widget.profile but
                 }
             }
         }
-        button.btn {
+        button {
             padding: 0 12px;
             margin-top: 10px;
             line-height: 40px;
+
+            font-family: @font-swatch7-font-family;
+            line-height: @font-swatch7-line-height;
+            font-size: @font-swatch7-font-size;
+            font-weight:@font-swatch7-font-weight;
+            background-color: @font-swatch7-background-color;
+            color: @font-swatch7-color;
+            border: none;
+            &:hover {
+              background-color: @font-swatch7-background-color-hover;
+              cursor: pointer;
+              text-decoration: none;
+            }
+
             @media @mobile {
                 width: 100%;
             }
@@ -1525,6 +1540,10 @@ button.blog-search-submit-button, .widget.signupform button, .widget.profile but
             }
         }
     }
+}
+
+.advancedcontactform .option-list {
+  padding: 1em 0;
 }
 
 /* ===============================
