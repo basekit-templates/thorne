@@ -1,5 +1,6 @@
 {
     "name":"Thorne",
+    "versionTenCompatible": 1,
     "thumbnail":"thorne.png",
     "screenshot":"thorne-screenshot.jpg",
     "templateType":"standard",
